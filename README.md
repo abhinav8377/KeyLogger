@@ -12,7 +12,6 @@
 ### Core Functionality  
 - **🔒 Encrypted Keystroke Capture** - Uses Fernet symmetric encryption
 - **📊 Real-time Monitoring** - Captures keystrokes with timestamps
-- **🌐 Data Exfiltration** - Simulated transmission to mock server
 - **💾 Secure Storage** - Local encrypted log storage
 - **🔄 Persistence** - Windows registry startup persistence
 
@@ -46,15 +45,10 @@ python keylogger.py
 ```bash
 python keylogger.py
 ```
-### Starting the Mock Server (Optional)
-```bash
-# In a separate terminal
-python server.py
-```
+
 ### Project Structure
 Intern Project/ <br>
 ├── keylogger.py        # Main keylogger application <br>
-├── server.py           # Mock exfiltration server <br>
 ├── config.py           # Configuration settings <br>
 ├── utils.py            # Utility functions <br>
 ├── requirements.txt    # Python dependencies <br>
@@ -70,7 +64,6 @@ Intern Project/ <br>
 ## 🔧 Configuration Key settings in config.py: 
 - **Exfiltration Interval**: 300 seconds (5 minutes)
 - **Max Log Size**: 1MB - **Log Retention**: 7 days
-- **Server URL**: http://localhost:8080/receive
 
 ## 🛡️ Security Features 
 - **AES Encryption**: All logs encrypted with Fernet
@@ -84,7 +77,6 @@ Intern Project/ <br>
 - **encrypted_logs.dat** - Encrypted keystroke data
 - **encryption.key** - Fernet encryption key
 - **warnings.log** - System warnings and events
-- **server_received_logs.json** - Server-side logs
 - **consent.txt** - User consent file
 
 ## 🔍 Educational Value 
