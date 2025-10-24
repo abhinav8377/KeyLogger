@@ -5,7 +5,6 @@ from cryptography.fernet import Fernet
 CONFIG = {
     'LOG_FILE': 'encrypted_logs.dat',
     'KEY_FILE': 'encryption.key',
-    'SERVER_URL': 'http://localhost:8080/receive',
     'EXFILTRATION_INTERVAL': 300,  # 5 minutes
     'MAX_LOG_SIZE': 1024 * 1024,  # 1MB
     'KILL_SWITCH_FILE': 'KILL_SWITCH.txt',
